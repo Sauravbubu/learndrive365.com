@@ -13,13 +13,13 @@ export default defineConfig({
       output: {
         manualChunks: {
           // Separate large third-party libraries into vendor chunk
-          // 'vendor.js': ['library1', 'library2'],
           react: ["react", "react-dom", "react-router-dom", "react-icons"],
           "styled-components": ["styled-components"],
         },
       },
     },
     preload: true, // Enable asset preloading
+    assetsInclude: ["app.css"], 
   },
   server: {
     compress: true, // Enable asset compression (gzip)
