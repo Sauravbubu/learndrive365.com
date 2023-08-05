@@ -19,7 +19,6 @@ export default defineConfig({
       },
     },
     preload: true, // Enable asset preloading
-    assetsInclude: ["app.css"], 
   },
   server: {
     compress: true, // Enable asset compression (gzip)

@@ -8,7 +8,6 @@ import {
   createBrowserRouter,
 } from "react-router-dom";
 import { paths } from "./Constants/constant";
-import "./app.css";
 // Import the OfferPopupProvider
 import { OfferPopupProvider } from "./conext/OfferPopupContext";
 
