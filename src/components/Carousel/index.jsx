@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled, { css, keyframes } from "styled-components";
+import img1 from '../../assets/img1.jpg'
+import img2 from '../../assets/img2.jpg'
+import img3 from '../../assets/img3.jpg'
+import img4 from '../../assets/img4.jpg'
+
 
 const slideAnimation = keyframes`
   0% {
@@ -179,19 +184,19 @@ const FixedButtonsContainerOverLay = styled.div`
 
 const slidesData = [
   {
-    imageUrl: "https://i.imgur.com/UNZ7Uas.jpg",
+    imageUrl: img1,
     text: "Get ready for an exciting driving experience. Subscribe now!",
   },
   {
-    imageUrl: "https://i.imgur.com/sfNCAZp.jpg",
+    imageUrl: img2,
     text: "Become a skilled driver and boost your confidence on the road.",
   },
   {
-    imageUrl: "https://i.imgur.com/66xXWPa.jpg",
+    imageUrl: img3,
     text: "Discover the joy of driving with our expert instructors.",
   },
   {
-    imageUrl: "https://i.imgur.com/d166Dhx.jpg",
+    imageUrl: img4,
     text: "Safe driving starts here. Join our driving courses today.",
   },
 ];
@@ -222,7 +227,7 @@ const Carousel = ({ setFormOpen }) => {
           <CarouselItem key={index} sliding={index === currentSlide}>
             <SlideImage
               src={slide.imageUrl}
-              /* loading="lazy" */
+              loading="lazy"
               loaded={loaded}
               onLoad={handleImageLoad}
               referrerPolicy="no-referrer"

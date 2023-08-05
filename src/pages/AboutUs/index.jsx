@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { MemoisedFooter } from "../../components/Footer";
-
+import TraingImage from '../../assets/img5.jpg'
 const fadeInAnimation = keyframes`
   from {
     opacity: 0;
@@ -94,7 +94,7 @@ const AboutUs = () => {
         <AboutUsContent>
           <AboutUsImage>
             {/* Add an image of your driving school here */}
-            <img src="https://i.imgur.com/66xXWPa.jpg" alt="Driving School" />
+            <img src={TraingImage} alt="Driving School" />
           </AboutUsImage>
           <AboutUsText>
             <AboutUsSubtitle>Our Story</AboutUsSubtitle>
