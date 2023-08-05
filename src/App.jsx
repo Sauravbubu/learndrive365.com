@@ -2,6 +2,7 @@
 import React, { Suspense } from "react";
 import { lazy } from "react";
 import SidebarLayout from "../src/AppLayout/SideBarLayout";
+import "./app.css";
 import {
   Navigate,
   RouterProvider,
