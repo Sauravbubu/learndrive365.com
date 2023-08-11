@@ -33,7 +33,7 @@ const FooterLink = styled.a`
   transition: color 0.3s;
 
   &:hover {
-    color: #f5a623;
+    color: #05a97f;
   }
 `;
 

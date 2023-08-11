@@ -53,11 +53,11 @@ const NavItem = styled.li`
 
 const HamburgerMenu = styled.div`
   cursor: pointer;
-  color: #fb4b28;
+  color: #05a97f;
   font-size: 24px;
   padding: 0 12px;
   display: none;
-  border: 1px solid  rgba(255, 137, 78, 0.955);
+  border: 1px solid #05a97f;
 
   @media (max-width: 768px) {
     display: block;
@@ -105,7 +105,7 @@ const Navbar = () => {
           <NavLink
             style={({ isActive }) => ({
               fontWeight: isActive ? "bold" : "",
-              color: isActive ? "yellow" : "black",
+              color: isActive ? "#05a97f" : "#222222",
             })}
             to="/home"
           >
@@ -116,7 +116,7 @@ const Navbar = () => {
           <NavLink
             style={({ isActive }) => ({
               fontWeight: isActive ? "bold" : "",
-              color: isActive ? "yellow" : "black",
+              color: isActive ? "#05a97f" : "#222222",
             })}
             to="/aboutus"
           >
@@ -127,7 +127,7 @@ const Navbar = () => {
           <NavLink
             style={({ isActive }) => ({
               fontWeight: isActive ? "bold" : "",
-              color: isActive ? "yellow" : "black",
+              color: isActive ? "#05a97f" : "#222222",
             })}
             to="/courses"
           >

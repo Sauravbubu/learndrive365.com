@@ -7,7 +7,7 @@ const WhyUsContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  max-width: 1280px;
+  // max-width: 1280px;
   flex-wrap: wrap;
   width: 100%;
   margin: 0 auto;

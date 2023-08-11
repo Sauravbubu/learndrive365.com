@@ -97,8 +97,8 @@ const SlideText = styled.div`
   font-weight: 900;
   animation: colorChange 5s infinite;
   @media (max-width: 768px) {
-    font-size: 1rem;
-    top: 55%; /* For medium-sized screens */
+    font-size: 18px;
+    top: 30%; /* For medium-sized screens */
   }
   @keyframes colorChange {
     0% {
@@ -146,10 +146,10 @@ const FixedButtonsContainer = styled.div`
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    border: 1px solid #f5a5239f;
+    border: 1px solid #05a97f;
 
     &:hover {
-      color: #f5a623;
+      color: #05a97f;
     }
   }
 `;
@@ -161,13 +161,15 @@ const FixedButtonsContainerOverLay = styled.div`
   transform: translateX(-50%);
   display: flex;
   @media (max-width: 768px) {
-    top: 68%; /* For medium-sized screens */
+    top: 45%; /* For medium-sized screens */
+    display: block;
   }
   button {
     margin: 0 10px;
     font-size: 2vw;
+    border-radius: 50px !important;
     border: none;
-    background-color: #f5a623;
+    background-color: #05a97f;;
     color: white;
     font-weight: bold;
     border-radius: 5px;
@@ -175,10 +177,18 @@ const FixedButtonsContainerOverLay = styled.div`
     height: 5vw;
     cursor: pointer;
     transition: background-color 0.3s;
+    @media (max-width: 768px) {
+      font-size: 3.5vw;
+      margin: 8px 10px;
+      width: 35vw !important;
+      height: 5vh !important;
+    }
 
     &:hover {
-      background-color: #e69500;
-    }
+       background: transparent; 
+       border: 2px solid #ffffff; 
+       border-radius: 50px;    
+      }
   }
 `;
 
