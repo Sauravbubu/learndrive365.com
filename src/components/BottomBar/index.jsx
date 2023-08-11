@@ -9,7 +9,8 @@ const BottomAppBarContainer = styled.div`
   height: 56px;
   position: fixed;
   bottom: 0vh;
-  background-color: #ead327;
+   background-color: #05a97f;
+   color: #ffffff;
   justify-content: space-around;
   align-items: center;
   display: none;
@@ -20,7 +21,7 @@ const BottomAppBarContainer = styled.div`
 
 const MenuItem = styled.span`
   font-size: 10px;
-  color: #333;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,15 +82,15 @@ const BottomAppBarMenu = () => {
     <>
       <BottomAppBarContainer>
         <MenuItem onClick={() => handleMenuItemClick("Call Now")}>
-          <FaPhoneAlt size={20} color="#21252f" />
+          <FaPhoneAlt size={20} color="ffffff" />
           <h4 style={{ marginLeft: "5px" }}>Call Now</h4>
         </MenuItem>
         <MenuItem onClick={() => handleMenuItemClick("Chat On Whatsapp")}>
-          <FaWhatsapp size={20} color="#21252f" />
+          <FaWhatsapp size={20} color="ffffff" />
           <h4 style={{ marginLeft: "5px" }}>Chat On Whatsapp</h4>
         </MenuItem>
         <MenuItem onClick={() => handleMenuItemClick("Directions")}>
-          <FaMapMarked size={20} color="#21252f" />
+          <FaMapMarked size={20} color="ffffff" />
           <h4 style={{ marginLeft: "5px" }}>Directions</h4>
         </MenuItem>
       </BottomAppBarContainer>

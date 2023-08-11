@@ -48,7 +48,7 @@ const TestimonialItem = styled.div`
   text-align: center;
   opacity: ${({ active }) => (active ? "1" : "0.7")};
   transition: opacity 0.3s ease;
-  background-color: #f5a623;
+  background-color: #05a97f;
   color: #fff;
 
   ${({ sliding }) =>

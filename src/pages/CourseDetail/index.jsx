@@ -34,7 +34,7 @@ const CourseDetailDescription = styled.p`
 const CourseDetailPrice = styled.p`
   font-size: 18px;
   font-weight: bold;
-  color: #f5a623;
+  color: #05a97f;
   margin-bottom: 10px;
 `;
 
@@ -45,7 +45,7 @@ const CourseDetailDuration = styled.p`
 
 const BuyNowButton = styled.button`
   padding: 10px 20px;
-  background-color: #f5a623;
+  background-color: #05a97f;
   color: #fff;
   font-size: 16px;
   font-weight: bold;
@@ -55,8 +55,9 @@ const BuyNowButton = styled.button`
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #e69500;
-  }
+     background: transparent; 
+ border: 2px solid #ffffff; 
+ border-radius: 50px;  }
 `;
 
 const IconWrapper = styled.span`

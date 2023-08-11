@@ -19,7 +19,7 @@ const SectionContainer = styled.div`
 
 const SectionTitle = styled.h2`
   font-size: 28px;
-  color: #cf7272;
+  color: #000000;
   font-weight: bold;
   text-align: center;
   margin-bottom: 40px;
@@ -30,6 +30,7 @@ const WhyList = styled.ul`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 0;
 `;
 
 const WhyItem = styled.li`
@@ -41,7 +42,7 @@ const WhyItem = styled.li`
   svg {
     font-size: 48px;
     margin-bottom: 20px;
-    color: #f5a623;
+    color: #05a97f;
   }
 `;
 

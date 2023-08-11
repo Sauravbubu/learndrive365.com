@@ -35,7 +35,7 @@ const AboutUsContent = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    // max-width: 1200px;
     margin: 0 auto;
   }
 `;
