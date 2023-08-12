@@ -35,7 +35,21 @@ const OfferHeader = styled.h2`
 const OfferDescription = styled.p`
   color: #666;
 `;
-
+const ModalOverlay = styled.div`
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 const OfferPopup = ({ header, description, timeIntervalInMinuit, onClose }) => {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -61,17 +75,19 @@ const OfferPopup = ({ header, description, timeIntervalInMinuit, onClose }) => {
 
   const handleClose = () => {
     setShowPopup(false);
-    onClose();
+    typeof onClose === "function" && onClose();
   };
 
   if (!showPopup) return null;
 
   return (
-    <PopupContainer className="popup-container">
-      <CloseButton onClick={handleClose}>X</CloseButton>
-      <OfferHeader>{header}</OfferHeader>
-      <OfferDescription>{description}</OfferDescription>
-    </PopupContainer>
+    <ModalOverlay>
+      <PopupContainer className="popup-container">
+        <CloseButton onClick={handleClose}>X</CloseButton>
+        <OfferHeader>{header}</OfferHeader>
+        <OfferDescription>{description}</OfferDescription>
+      </PopupContainer>
+    </ModalOverlay>
   );
 };
 

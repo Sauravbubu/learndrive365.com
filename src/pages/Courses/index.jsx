@@ -54,26 +54,28 @@ const DrivingCoursePage = () => {
   };
 
   return (
-    <div>
-      <h1>Driving Courses</h1>
-      <CourseContainer>
-        {courses.map((course, index) => (
-          <Card
-            key={index}
-            //   imageDetail={{
-            //     src: getDataUrlFromComp(<FaCar size={30} color="#1DA1F2"/>),
-            //     position: "top",
-            //   }}
-            onClick={() => handleCardClick(index, course)}
-            CardHeaderText={course.title}
-            CardDescriptionText={course.description}
-            price={course?.price}
-            ctaText={"Know More"}
-          />
-        ))}
-      </CourseContainer>
+    <>
+      <div>
+        <h1>Driving Courses</h1>
+        <CourseContainer>
+          {courses.map((course, index) => (
+            <Card
+              key={index}
+              //   imageDetail={{
+              //     src: getDataUrlFromComp(<FaCar size={30} color="#1DA1F2"/>),
+              //     position: "top",
+              //   }}
+              onClick={() => handleCardClick(index, course)}
+              CardHeaderText={course.title}
+              CardDescriptionText={course.description}
+              price={course?.price}
+              ctaText={"Know More"}
+            />
+          ))}
+        </CourseContainer>
+      </div>
       <MemoisedFooter />
-    </div>
+    </>
   );
 };
 

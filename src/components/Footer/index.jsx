@@ -15,7 +15,8 @@ const FooterContainer = styled.footer`
   color: #fff;
   padding: 40px 0;
   text-align: center;
-  @media (max-width: 768px) {
+  
+  @media (max-width: 668px) {
     margin-bottom: 5vh;
   }
 `;

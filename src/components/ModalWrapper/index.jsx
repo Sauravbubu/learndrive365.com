@@ -26,7 +26,10 @@ const ModalOverlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +71,7 @@ const CloseButton = styled.button`
   cursor: pointer;
   display: flex;
   align-items: center;
-  &:hover{
+  &:hover {
     background-color: #bd7107;
   }
 `;
