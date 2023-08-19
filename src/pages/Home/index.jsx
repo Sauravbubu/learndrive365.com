@@ -6,6 +6,8 @@ import ContactForm from "../../components/Form";
 import { MemoisedModal } from "../../components/ModalWrapper";
 import { MemoisedWhyOurDrivingSchool } from "../../components/SafeFowWomen";
 import { MemoisedFooter } from "../../components/Footer";
+import InteractiveSectionComponent from "../../components/HomeInteractive";
+import QuizGame from "../../components/Game";
 
 const Home = () => {
   const [FormOpen, setFormOpen] = useState(false);
@@ -13,7 +15,10 @@ const Home = () => {
     <div style={{ width: "100%" }}>
       <Carousel setFormOpen={setFormOpen} />
       <WhyUs />
+      <InteractiveSectionComponent />
+      <QuizGame/>
       <MemoisedWhyOurDrivingSchool />
+
       <Testimonials />
       {FormOpen && (
         <MemoisedModal
